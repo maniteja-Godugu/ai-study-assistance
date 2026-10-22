@@ -262,16 +262,3 @@ def study_assist(
 
 
 
-#print("explanation: ",valid_result.explanation,"\n")
-
-'''print("key points: ",valid_result.key_points,"\n")
-print("Practice Problems:")
-for i in range(0,no_mcqs):
-    print(i+1,".",valid_result.mcqs[i].Question,"\n")
-    for j in range(len(valid_result.mcqs[i].options)):
-        char_no=65
-        print(chr(char_no+j),".",valid_result.mcqs[i].options[j])
-    print("\ncorrect Answer: ",valid_result.mcqs[i].correct_answer)
-    print("explanation: ",valid_result.mcqs[i].answer_explaination)
-    print()'''
-
