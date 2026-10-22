@@ -8,6 +8,15 @@ import logging
 logger=logging.getLogger(__name__)
 router=APIRouter() 
 
+
+@router.get("/")
+def home():
+    return {
+        "message": "Welcome to AI Study Assistant API! #Explore the API",
+        "status": "running"
+    }
+
+
 @router.post("/register",status_code=201)
 @limiter.limit("10/minute")
 def register(input:register_schema,request:Request):
